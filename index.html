@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TujagueGYM — Rutina de musculación gratis de 4 semanas</title>
+<meta name="description" content="Descargá gratis una rutina de musculación de 4 semanas diseñada por los entrenadores de TujagueGYM. Dejá tus datos y la recibís al instante.">
+<meta name="theme-color" content="#0B0B0C">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="TujagueGYM — Rutina de musculación gratis de 4 semanas">
+<meta property="og:description" content="Un plan claro, progresivo y listo para usar desde tu primer día en el gimnasio.">
+<meta property="og:locale" content="es_AR">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230B0B0C'/><text x='16' y='22' font-family='system-ui,sans-serif' font-size='16' font-weight='700' fill='%23D8FF47' text-anchor='middle'>T</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#form">Ir al formulario</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="#top" aria-label="TujagueGYM, inicio">
+      <span class="logo-mark" aria-hidden="true">T</span>
+      <span class="logo-text">Tujague<span class="logo-accent">GYM</span></span>
+    </a>
+    <a class="btn btn-ghost header-cta" href="#form">Quiero la rutina</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO + FORMULARIO -->
+  <section class="hero">
+    <div class="container hero-grid">
+
+      <div class="hero-copy">
+        <p class="eyebrow">Descarga gratuita</p>
+        <h1>Tu rutina de musculación de <span class="hl">4 semanas</span>, gratis.</h1>
+        <p class="lead">
+          Un plan progresivo, armado por los entrenadores de TujagueGYM,
+          con ejercicios, series, repeticiones y descansos. Listo para empezar hoy,
+          entrenes donde entrenes.
+        </p>
+        <ul class="hero-points">
+          <li>4 semanas planificadas día por día</li>
+          <li>Versión para principiantes y para intermedios</li>
+          <li>PDF descargable, sin costo ni letra chica</li>
+        </ul>
+      </div>
+
+      <div class="card form-card" id="form">
+        <h2 class="card-title">Descargá tu rutina</h2>
+        <p class="card-sub">Completá los datos y la descargás al instante.</p>
+
+        <form id="lead-form" novalidate>
+          <div class="field">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="given-name"
+                   placeholder="Tu nombre" required>
+            <p class="error" data-error-for="nombre" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email"
+                   placeholder="tu@email.com" required>
+            <p class="error" data-error-for="email" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="whatsapp">WhatsApp <span class="optional">(opcional)</span></label>
+            <input type="tel" id="whatsapp" name="whatsapp" autocomplete="tel"
+                   placeholder="+54 9 11 1234 5678">
+            <p class="error" data-error-for="whatsapp" hidden></p>
+          </div>
+
+          <div class="field">
+            <label for="objetivo">Tu objetivo</label>
+            <select id="objetivo" name="objetivo" required>
+              <option value="" selected disabled>Elegí una opción</option>
+              <option value="ganar-musculo">Ganar masa muscular</option>
+              <option value="bajar-grasa">Bajar grasa y tonificar</option>
+              <option value="empezar">Empezar de cero</option>
+              <option value="fuerza">Ganar fuerza</option>
+            </select>
+            <p class="error" data-error-for="objetivo" hidden></p>
+          </div>
+
+          <button class="btn btn-primary btn-block" type="submit" id="submit-btn">
+            <span class="btn-label">Descargar rutina gratis</span>
+            <span class="spinner" aria-hidden="true"></span>
+          </button>
+
+          <p class="form-legal">
+            Usamos tus datos solo para enviarte la rutina y novedades de TujagueGYM.
+            Podés darte de baja cuando quieras.
+          </p>
+
+          <p class="form-status" role="alert" aria-live="assertive" hidden></p>
+        </form>
+
+        <!-- Estado de éxito -->
+        <div class="success" id="success" hidden>
+          <div class="success-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 6 9 17l-5-5"/>
+            </svg>
+          </div>
+          <h3>¡Listo, <span id="success-name">campeón</span>!</h3>
+          <p>Tu rutina de 4 semanas está lista. Descargala y guardala en el celular
+          para tenerla siempre a mano en el gimnasio.</p>
+          <a class="btn btn-primary btn-block" id="download-link"
+             href="rutina-4-semanas.pdf" download>Descargar el PDF</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- QUÉ INCLUYE -->
+  <section class="section" id="rutina">
+    <div class="container">
+      <h2 class="section-title">Qué incluye la rutina</h2>
+      <p class="section-sub">Un PDF de 9 páginas con el plan completo, la progresión semana a semana y la guía de técnica.</p>
+
+      <div class="grid-3">
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6.5 6.5v11M17.5 6.5v11M3 9v6M21 9v6M6.5 12h11"/>
+            </svg>
+          </div>
+          <h3>Plan día por día</h3>
+          <p>4 semanas con ejercicios, series, repeticiones, cadencia y descansos definidos. Abrís y entrenás.</p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 20h18M6 20V12M11 20V7M16 20v-5M21 20V4"/>
+            </svg>
+          </div>
+          <h3>Progresión real</h3>
+          <p>Cada semana sube la carga o el volumen. Sabés exactamente cuánto agregar y cuándo.</p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3v18M5 8l7-5 7 5"/>
+              <circle cx="12" cy="15" r="4"/>
+            </svg>
+          </div>
+          <h3>Técnica explicada</h3>
+          <p>Guía de ejecución de los ejercicios clave para que entrenes seguro desde el primer día.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Cómo la obtenés</h2>
+      <ol class="steps">
+        <li>
+          <span class="step-num">1</span>
+          <h3>Dejás tus datos</h3>
+          <p>Nombre, email y tu objetivo. Te lleva menos de 30 segundos.</p>
+        </li>
+        <li>
+          <span class="step-num">2</span>
+          <h3>Descargás el PDF</h3>
+          <p>Se descarga al instante, listo para imprimir o para ver desde el celular.</p>
+        </li>
+        <li>
+          <span class="step-num">3</span>
+          <h3>Empezás a entrenar</h3>
+          <p>Seguís el plan 4 semanas. Si querés, lo ajustamos con vos en el gimnasio.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta">
+    <div class="container cta-inner">
+      <h2>Empezá tus próximas 4 semanas con un plan.</h2>
+      <p>Descargá la rutina gratis y dejá de improvisar en el gimnasio.</p>
+      <a class="btn btn-primary btn-lg" href="#form">Quiero mi rutina gratis</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span class="logo-text small">Tujague<span class="logo-accent">GYM</span></span>
+    <p class="footer-meta">© <span id="year">2026</span> TujagueGYM. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
