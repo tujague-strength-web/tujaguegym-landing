@@ -1,0 +1,4 @@
+# Archivos que no forman parte del sitio publicado.
+.claude
+tools
+README.md
